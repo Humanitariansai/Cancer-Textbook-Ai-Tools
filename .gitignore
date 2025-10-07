@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Model and cache directories
+cache/
+*.bin
+*.h5
+*.ckpt
+
+# Hugging Face / Transformers cache
+~/.cache/huggingface/

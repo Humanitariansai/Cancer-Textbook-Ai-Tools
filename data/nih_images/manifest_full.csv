@@ -1,0 +1,11 @@
+index,title,source_url,thumb_file,thumb_size,full_file,full_size
+1,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13458,nih_thumb_1.jpg,180x105,nih_full_1.jpg,756x439
+2,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13457,nih_thumb_2.jpg,161x180,nih_full_2.jpg,720x806
+3,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13454,nih_thumb_3.jpg,180x171,nih_full_3.jpg,461x439
+4,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13455,nih_thumb_4.jpg,180x171,nih_full_4.jpg,461x439
+5,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13456,nih_thumb_5.jpg,161x180,nih_full_5.jpg,720x806
+6,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13453,nih_thumb_6.jpg,180x105,nih_full_6.jpg,756x439
+7,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13447,nih_thumb_7.jpg,180x138,nih_full_7.jpg,756x579
+8,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13448,nih_thumb_8.jpg,180x138,nih_full_8.jpg,756x579
+9,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13307,nih_thumb_9.jpg,180x147,nih_full_9.jpg,792x648
+10,thumbnail,https://visualsonline.cancer.gov/details.cfm?imageid=13330,nih_thumb_10.jpg,180x108,nih_full_10.jpg,720x432

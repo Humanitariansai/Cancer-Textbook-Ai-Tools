@@ -1,0 +1,1135 @@
+<!DOCTYPE html><html lang="en" class=""><head>
+	<script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-e44f825d465333ff541943505a70967a1ce9eea0.js"></script><script type="module" src="https://static-dev.cancer.gov/launch-banner/prototype__2-build-workflow/assets/index-ahWVFXuP.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="styles.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/jquery-dropdown.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script type="text/javascript">
+	function validateNavSearch(searchform) {
+		if (document.getElementById('q').value.includes("'"))
+			{
+			alert("Searches cannot include apostrophes. Please replace any apostrophe characters with a space.")
+			return false;
+			}
+		else 
+		{
+			return true;
+		}
+	}
+	</script>
+
+	<title>NCI Visuals Online: Search: Results</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="Visuals Online search results">
+
+	<!-- fancybox slide show components -->
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	
+	<script type="text/javascript">
+	function validate(searchform) {
+		if (document.getElementById('q-modify').value.includes("'"))
+			{
+			alert("Searches cannot include apostrophes. Please replace any apostrophe characters with a space.")
+			return false;
+			}
+		else 
+		{
+			return true;
+		}
+	}
+	</script>
+
+	
+    
+    <script type="text/javascript">
+	//<![CDATA[
+		jQuery(document).ready(function() {
+			jQuery(".fancybox").fancybox();
+		});
+	//]]>
+	</script>
+    
+    <style type="text/css">
+	.fancybox-skin {
+    	background: black;
+	}
+	.fancybox-title a {
+		color: silver;
+	}
+	.fancybox-title a:hover {
+		text-decoration: underline;
+	}
+	.fancybox-opened .fancybox-skin {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	</style>
+    
+<script src="https://assets.adobedtm.com/6a4249cd0a2c/785de09de161/launch-70d67a6a40a8.min.js" async=""></script><style>@font-face{font-family:Open Sans;font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Open Sans;font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Open Sans;font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Open Sans;font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Open Sans;font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Open Sans;font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Poppins;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Poppins;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Poppins;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style><script src="https://assets.adobedtm.com/6a4249cd0a2c/8f8b3d4855f8/ef0b1ceab6a0/RC0d152d2ee1c047c989b2ae3830863e3e-source.min.js" async=""></script><script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=NCI"></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script></head>
+
+
+
+<body><div></div>
+	<div class="skip"><a title="Skip to content" href="#content">Skip to content</a></div>
+	<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+	<!-- HEADER -->
+	<header role="banner" class="banner clearfix">
+		<div class="logo">
+			<h1><a href="/"><img src="siteimages/logos/nci-logo.svg" onerror="this.src='siteimages/logos/nci-logo.png'; this.removeAttribute('onerror');" alt="NCI Visuals Online"></a></h1>
+		</div>
+        
+        
+		<div class="utility-nav">
+			<ul class="utility-nav">
+				<li><a href="about.cfm" class="about">ABOUT</a></li>
+				<li><a href="lightbox.cfm" class="my-picture" title="Place to store images temporarily">MY&nbsp;PICTURES</a></li>
+				<li class="follow-us"><a href="https://www.instagram.com/nationalcancerinstitute/">FOLLOW&nbsp;US</a></li>
+			</ul>
+		</div>
+	</header>
+  
+  <!-- begin browse bar -->
+	<div class="browse-search-images clearfix">
+		
+		
+		
+		<div class="search-bar-tips-container">
+		
+		<div class="header-search" role="search">
+			<form action="searchaction.cfm" method="get" id="" name="" class="searchform" onsubmit="return validateNavSearch(this);">
+				<label class="hidden" for="q">Search</label>
+				<input placeholder="search" class="search-input" id="q" maxlength="255" name="q" type="text">
+				<button class="searchSubmit" id="sitesearch" type="submit">
+					<span class="hidden">Search</span>
+				</button>
+			</form>
+		</div>
+		<div class="js-dropdown search-tips not-is-expanded" data-dropdown-settings="{'closeButton':true}">
+			<div class="dropdown-title" id="dropdown-0-header" role="button" aria-controls="dropdown-0-content" aria-expanded="false">
+				search tips
+			</div>
+			<div class="dropdown-content" id="dropdown-0-content" aria-labelled-by="dropdown-0-header" aria-hidden="true"><button class="close-button" type="button"><span class="hidden">close</span></button>
+				<span class="nub"></span>
+				<p><strong>Search Tips</strong></p>
+	<ul>
+		<li>Use the <a href="search.cfm">search page</a> for more options</li>
+        <li>Use quotation marks (e.g.&nbsp;<strong>"breast&nbsp;cancer"</strong>) to search by that <em>exact term</em> or phrase, no variations.
+		</li><li>Use multiple keywords separated by spaces (e.g.&nbsp;<strong>kidney&nbsp;renal</strong>) for broader search results. This search will retrieve items that correspond to <em>any</em> of those words, ranking higher those with all or most of the keywords. Plurals and other variations are automatically included.</li>
+		<li>To exclude a word from your search, precede it with a hyphen, e.g.&nbsp;<strong>-historical</strong></li>
+		<li>Searches are case-insensitive</li>
+		<li>Do not include apostrophes in your search - replace any apostrophes with spaces</li>
+	</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- end browse bar -->
+
+	<!-- END HEADER -->
+
+	<!-- Begin MAIN CONTENT AREA -->
+	<div class="main-content" id="content" tabindex="-1">
+    
+    <h2>Search Results</h2>
+    
+<h3>lung cancer</h3> 
+		<p>Your search  for <strong>lung cancer</strong> 
+        found 118 images.
+   		
+        	Displaying page 1 of 3.
+        
+        </p>
+        
+
+
+    <!-- begin Search again filters -->
+	<div class="search-again">
+        <ul class="image-actions">
+            
+                <li class="minus-magnify-icon">
+                    <a href="togglebt.cfm?newbt=-1" title="show small thumbnails"></a>
+                </li>
+                <li class="plus-magnify-icon">
+                    <a href="togglebt.cfm?newbt=1" title="show large thumbnails"></a>
+                </li>
+            
+					<script type="text/javascript">
+                        // <![CDATA[
+                        document.write('<li class="gallery-icon">');
+                        document.write('<a class="open_fancybox" title="view slideshow" href=""></a>');
+                        document.write('</li>');
+                        // ]]>
+                    </script><li class="gallery-icon"><a class="open_fancybox" title="view slideshow" href=""></a></li>
+                
+
+        </ul>
+
+	<form method="get" action="searchaction.cfm" class="tabular clearfix" id="againform" onsubmit="return validate(this);">
+	
+	<div class="search-again-field">
+		<label for="q-modify">Modify Search:</label>
+		<input type="text" name="q" id="q-modify" title="keyword" size="12" value="lung cancer" class="search-again-form-field">
+        <input type="submit" value="" id="submit" class="filter-go" style="vertical-align: middle;">
+        <label for="submit">&nbsp;</label>
+	</div>
+    
+	<div class="refine-search-results clearfix">
+		
+	</div>
+	
+	<div class="refine-search-results clearfix">
+		
+            
+        <div class="formrow">
+            <label for="from">Date Created:</label>
+            <select name="from" title="Date Created - start of range" id="from">
+                <option value="">Any</option>
+                <option value="1900">1900</option>
+                <option value="1920">1920</option>
+                <option value="1940">1940</option>
+                <option value="1960">1960</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                
+            </select>
+            <label for="to">To</label>
+            <select name="to" title="Date Created - end of range" id="to">
+                <option value="">Any</option>
+                <option value="1900">1900</option>
+                <option value="1920">1920</option>
+                <option value="1940">1940</option>
+                <option value="1960">1960</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                
+            </select>
+        </div>
+        
+		<div class="formrow">
+			<label for="topicid">Topic:</label>
+			
+			<select name="topicid" id="topicid">
+				<option value="">Any</option>
+				<option value="g3">Anatomy (all)</option>
+				<option value="9">-- Breast</option>
+				<option value="157">-- Circulatory System</option>
+				<option value="11">-- Digestive/Gastrointestinal System</option>
+				<option value="13">-- Eye</option>
+				<option value="20">-- Genitourinary</option>
+				<option value="10">-- Gynecologic</option>
+				<option value="15">-- Lymphatic System</option>
+				<option value="8">-- Musculoskeletal</option>
+				<option value="143">-- Nervous System</option>
+				<option value="14">-- Respiratory/Thoracic System</option>
+				<option value="24">-- Skin</option>
+				<option value="27">Animals</option>
+				<option value="34">Awards</option>
+				<option value="g20">Cancer Types (all)</option>
+				<option value="3">-- AIDS-Related</option>
+				<option value="224">-- Bladder Cancer</option>
+				<option value="162">-- Bone Cancer </option>
+				<option value="226">-- Brain Cancer</option>
+				<option value="161">-- Breast Cancer</option>
+				<option value="164">-- Cervical Cancer </option>
+				<option value="229">-- Childhood / Pediatric Cancers</option>
+				<option value="166">-- Colorectal Cancer</option>
+				<option value="170">-- Esophageal Cancer</option>
+				<option value="232">-- Ewing Sarcoma</option>
+				<option value="179">-- Kaposi Sarcoma</option>
+				<option value="180">-- Kidney Cancer </option>
+				<option value="182">-- Leukemia</option>
+				<option value="184">-- Liver Cancer</option>
+				<option value="185">-- Lung Cancer </option>
+				<option value="183">-- Lymphoma</option>
+				<option value="190">-- Melanoma</option>
+				<option value="193">-- Myelodysplastic Syndromes</option>
+				<option value="194">-- Neuroblastoma</option>
+				<option value="195">-- Ovarian Cancer</option>
+				<option value="196">-- Pancreatic Cancer</option>
+				<option value="198">-- Plasma Cell Tumor</option>
+				<option value="200">-- Prostate Cancer</option>
+				<option value="201">-- Skin Cancer  </option>
+				<option value="203">-- Soft Tissue Sarcoma</option>
+				<option value="205">-- Stomach Cancer </option>
+				<option value="206">-- Testicular Cancer</option>
+				<option value="207">-- Thymic Carcinoma</option>
+				<option value="210">-- Uterine Cancer</option>
+				<option value="g11">Cells or Tissue (all)</option>
+				<option value="75">-- Abnormal Cells or Tissue</option>
+				<option value="215">-- Normal Cells or Tissue</option>
+				<option value="236">Coping and Support</option>
+				<option value="g26">Español (todo)</option>
+				<option value="246">-- Fotografías e Ilustraciones Médicas</option>
+				<option value="245">-- Infografías</option>
+				<option value="158">Exhibits</option>
+				<option value="58">Food and Drink</option>
+				<option value="237">Global Health</option>
+				<option value="g10">Historical (all)</option>
+				<option value="72">-- Documents and Publications</option>
+				<option value="65">-- Events</option>
+				<option value="66">-- Graphics</option>
+				<option value="238">-- Locations</option>
+				<option value="69">-- People</option>
+				<option value="68">-- Technology and Treatment</option>
+				<option value="g25">Infographics (all)</option>
+				<option value="242">-- Health</option>
+				<option value="244">-- National Cancer Institute</option>
+				<option value="g13">Locations (all)</option>
+				<option value="94">-- Academic Institution/School</option>
+				<option value="91">-- Clinic/Hospital</option>
+				<option value="89">-- General</option>
+				<option value="93">-- Library</option>
+				<option value="98">-- NIH</option>
+				<option value="159">-- Nature/Outdoors</option>
+				<option value="216">-- Office Buildings</option>
+				<option value="95">-- Transportation</option>
+				<option value="g1">National Cancer Institute (all)</option>
+				<option value="88">-- Directors</option>
+				<option value="2">-- People</option>
+				<option value="g12">People (all)</option>
+				<option value="80">-- Adolescent/Young Adult</option>
+				<option value="81">-- Adult</option>
+				<option value="82">-- Child</option>
+				<option value="84">-- Family/Friends</option>
+				<option value="85">-- Group</option>
+				<option value="86">-- Health Professional</option>
+				<option value="83">-- Health Professional and Patient</option>
+				<option value="160">-- Patients</option>
+				<option value="87">-- Recreation</option>
+				<option value="231">-- Researcher</option>
+				<option value="35">Risk Factors and Causes</option>
+				<option value="g16">Science and Technology (all)</option>
+				<option value="217">-- Communications</option>
+				<option value="108">-- Computers</option>
+				<option value="110">-- Genetics</option>
+				<option value="105">-- Laboratory Techniques/Equipment</option>
+				<option value="106">-- Medical Devices</option>
+				<option value="235">-- Nanotechnology</option>
+				<option value="218">Staging</option>
+				<option value="g7">Test or Procedure (all)</option>
+				<option value="40">-- Biopsy</option>
+				<option value="49">-- Genetic Tests</option>
+				<option value="154">-- Imaging Procedures</option>
+				<option value="42">-- Lab Tests</option>
+				<option value="41">-- Physical Exam</option>
+				<option value="g17">Treatment (all)</option>
+				<option value="142">-- Biological Therapy</option>
+				<option value="131">-- Chemotherapy</option>
+				<option value="132">-- Experimental Therapy</option>
+				<option value="233">-- Immunotherapy</option>
+				<option value="133">-- Other Interventions</option>
+				<option value="140">-- Radiation Therapy</option>
+				<option value="141">-- Surgery</option>
+				
+			</select>
+		</div>
+
+        <div class="formrow">
+            <label for="imagetype">Image Type:</label>
+            <select name="imagetype" id="imagetype">
+                <option value="">Any</option>
+                <option value="B&amp;W, Diagram">B&amp;W, Diagram</option>
+                <option value="B&amp;W, Photo">B&amp;W, Photo</option>
+                <option value="B&amp;W, Illustration">B&amp;W, Illustration</option>
+                <option value="B&amp;W, Medical Illustration">B&amp;W, Medical Illustration</option>
+                <option value="B&amp;W, Other">B&amp;W, Other</option>
+                <option value="Color, Diagram">Color, Diagram</option>
+                <option value="Color, Photo">Color, Photo</option>
+                <option value="Color, Illustration">Color, Illustration</option>
+                <option value="Color, Medical Illustration">Color, Medical Illustration</option>
+                <option value="Color, Other">Color, Other</option>
+                <option value="Video">Video</option>
+            </select>
+        </div>
+        <div class="formrow">
+            <label for="sort">Sort by:</label>
+            <select name="sort" title="sort" id="sort">
+                <option value="relevance">Relevance</option>
+                <option value="title">Title</option>
+                <option value="datecreated">Date Created (newest)</option>
+                <option value="datecreatedoldest">Date Created (oldest)</option>
+                <option value="dateadded">Date Added</option>
+            </select>
+        </div>
+    </div>
+	</form>
+    </div>
+    <!-- end Search again filters -->
+
+
+
+ 	
+        
+            <ul id="gallery" class="medium">
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12226"><img src="images/12226-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12226"><h3>Lung Cancer, Stage IB</h3></a>
+                        
+                        	relevance 100%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12227"><img src="images/12227-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12227"><h3>Lung Cancer, Stage IVA</h3></a>
+                        
+                        	relevance 100%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9029"><img src="images/9029-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9029"><h3>Lung Cancer, Stage IIA</h3></a>
+                        
+                        	relevance 95%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9030"><img src="images/9030-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9030"><h3>Lung Cancer, Stage IIIA (1)</h3></a>
+                        
+                        	relevance 95%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9031"><img src="images/9031-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9031"><h3>Lung Cancer, Stage IIIB (1)</h3></a>
+                        
+                        	relevance 95%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=7152"><img src="images/7152-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=7152"><h3>Biopsy, Fine Needle Aspiration (FNA), Lung</h3></a>
+                        
+                        	relevance 80%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12228"><img src="images/12228-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12228"><h3>Lung Cancer, Stage IIB (2)</h3></a>
+                        
+                        	relevance 73%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9122"><img src="images/9122-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9122"><h3>Lung Cancer, Stage IIIA (3)</h3></a>
+                        
+                        	relevance 73%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9032"><img src="images/9032-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9032"><h3>Lung Cancer, Stage IVB</h3></a>
+                        
+                        	relevance 73%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=7243"><img src="images/7243-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=7243"><h3>Surgery - Resection, Wedge</h3></a>
+                        
+                        	relevance 73%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9120"><img src="images/9120-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9120"><h3>Lung Cancer, Stage IIB (1)</h3></a>
+                        
+                        	relevance 66%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9121"><img src="images/9121-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9121"><h3>Lung Cancer, Stage IIIA (2)</h3></a>
+                        
+                        	relevance 66%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9028"><img src="images/9028-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9028"><h3>Lung Cancer, Stage IA</h3></a>
+                        
+                        	relevance 59%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9123"><img src="images/9123-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9123"><h3>Lung Cancer, Stage IIIB (2)</h3></a>
+                        
+                        	relevance 59%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12229"><img src="images/12229-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12229"><h3>Lung Cancer, Stage IIIC</h3></a>
+                        
+                        	relevance 59%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=2292"><img src="images/2292-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=2292"><h3>Il-2 (Mouse Lungs)</h3></a>
+                        
+                        	relevance 51%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=7237"><img src="images/7237-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=7237"><h3>Lobectomy</h3></a>
+                        
+                        	relevance 51%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10578"><img src="images/10578-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10578"><h3>Lung Cancer Metastasis</h3></a>
+                        
+                        	relevance 51%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12995"><img src="images/12995-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12995"><h3>Lung Cancer and Quitting Smoking (Factoid)</h3></a>
+                        
+                        	relevance 44%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9051"><img src="images/9051-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9051"><h3>Lymphoma, Hodgkin, Childhood, Stage IV</h3></a>
+                        
+                        	relevance 44%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12710"><img src="images/12710-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12710"><h3>Pleuropulmonary Blastoma</h3></a>
+                        
+                        	relevance 44%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=7244"><img src="images/7244-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=7244"><h3>Pneumonectomy</h3></a>
+                        
+                        	relevance 44%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12996"><img src="images/12996-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12996"><h3>Progress in Lung Cancer Treatment (Factoid)</h3></a>
+                        
+                        	relevance 44%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=13303"><img src="images/13303-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=13303"><h3>Scan, Computed Tomography, Lung</h3></a>
+                        
+                        	relevance 44%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=7212"><img src="images/7212-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=7212"><h3>Bronchoscopy, With Cancer</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=2343"><img src="images/2343-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=2343"><h3>Chest X-ray (Cancer)</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12997"><img src="images/12997-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12997"><h3>Helping Lung Cancer Patients Finish Treatment (Factoid)</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10549"><img src="images/10549-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10549"><h3>Kras-Driven Lung Cancer</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10545"><img src="images/10545-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10545"><h3>Lung Cancer Autophagy</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10576"><img src="images/10576-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10576"><h3>Lung Cancer Desmoplasia</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12994"><img src="images/12994-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12994"><h3>Lung Cancer and KRAS G12C Mutation (Factoid)</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10604"><img src="images/10604-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10604"><h3>Migrating Lung Cancer Cells</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10546"><img src="images/10546-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10546"><h3>Non-Small Lung Cancer After Cisplatin Treatment</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=10542"><img src="images/10542-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=10542"><h3>Non-Small Lung Cancer After Etoposide Treatment</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=2348"><img src="images/2348-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=2348"><h3>Pathology of the Lung (Cancer)</h3></a>
+                        
+                        	relevance 37%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=7167"><img src="images/7167-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=7167"><h3>Biopsia de Pulmón por Aspiración con Aguja Fina (Biopsy, Fine Needle Aspiration (FNA), Lung)</h3></a>
+                        
+                        	relevance 29%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9034"><img src="images/9034-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9034"><h3>Cáncer de Pulmón en Estadio IA (Lung Cancer, Stage IA)</h3></a>
+                        
+                        	relevance 29%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=12317"><img src="images/12317-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=12317"><h3>Cáncer de Pulmón en Estadio IB (Lung Cancer, Stage IB)</h3></a>
+                        
+                        	relevance 29%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9035"><img src="images/9035-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9035"><h3>Cáncer de Pulmón en Estadio IIA (Lung Cancer, Stage IIA)</h3></a>
+                        
+                        	relevance 29%
+                        
+                    </div>
+                </li>
+            
+                <li class="resultsitem">
+                    <div class="resultsitempic">
+                        <a href="details.cfm?imageid=9136"><img src="images/9136-previewsm.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div class="resultsitemdesc">
+                        <a href="details.cfm?imageid=9136"><h3>Cáncer de Pulmón en Estadio IIB (Parte 1) (Lung Cancer, Stage IIB (1))</h3></a>
+                        
+                        	relevance 29%
+                        
+                    </div>
+                </li>
+            
+            </ul>
+        
+        
+        
+	<!-- begin previous/next -->
+		
+			<div class="prevnextbottom">
+				
+					<span class="first-page"><img src="siteimages/icons/page-first-inactive.png" alt="First" title="first page - inactive"></span>
+					<span class="previous-page"><img src="siteimages/icons/page-prev-inactive.png" alt="Previous" title="previous page - inactive"></span>
+					<span class="previous-text">Previous</span>
+				
+					<span class="prevnextdivider">|</span>
+				
+					<span class="next-text"><a href="searchaction.cfm?q=lung%20cancer&amp;sort=relevance&amp;page=2">Next</a></span>
+					<span class="next-page"><a href="searchaction.cfm?q=lung%20cancer&amp;sort=relevance&amp;page=2"><img src="siteimages/icons/page-next.png" alt="Next" title="next page"></a></span>
+					<span class="last-page"><a href="searchaction.cfm?q=lung%20cancer&amp;sort=relevance&amp;page=3"><img src="siteimages/icons/page-last.png" alt="Last" title="last page"></a></span>
+				
+			</div>
+		
+	<!-- end previous/next -->
+	
+	
+
+	</div>
+
+	<!-- End MAIN CONTENT AREA -->
+
+	<!-- FOOTER -->
+	<footer role="contentinfo" class="site-footer">
+		<ul>
+			<li><a href="/">VOL Home</a></li>
+			<li><a href="about.cfm">About</a></li>
+			<li><a href="lightbox.cfm" title="Place to store images temporarily">My Pictures</a></li>
+			
+			<li><a href="search.cfm">Search</a></li>
+			<li><a href="signin/">Staff Login</a></li>
+			<li><a href="http://www.cancer.gov/policies/privacy-security">Policies</a></li>
+			<li><a href="http://www.cancer.gov/policies/accessibility">Accessibility</a></li>
+			<li><a href="http://www.cancer.gov/policies/foia">FOIA</a></li>
+			<li><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">HHS Vulnerability Disclosure</a></li>
+		</ul>
+        <ul>
+        
+        	<li>Contact Us: <a href="mailto:cancergovstaff@mail.nih.gov">cancergovstaff@mail.nih.gov</a></li>
+        </ul>
+		<ul>
+			<li><a href="http://www.hhs.gov/">U.S. Department of Health and Human Services</a></li>
+			<li><a href="https://www.nih.gov/">National Institutes of Health</a></li>
+			<li><a href="http://www.cancer.gov/">National Cancer Institute</a></li>
+			<li><a href="https://www.usa.gov/">USA.gov</a></li>
+		</ul>
+		<p>NIH...Turning Discovery Into Health ®</p>
+	</footer>
+
+<!-- **** NCI Web Analytics  - DO NOT ALTER **** -->
+<script type="text/javascript" src="//static.cancer.gov/webanalytics/wa_vo_pageload.js"></script><script type="text/javascript" src="//static.cancer.gov/webanalytics/wa_vo_pre.js"></script><script type="text/javascript" src="//static.cancer.gov/webanalytics/s_code.js"></script><script type="text/javascript" src="//static.cancer.gov/webanalytics/wa_vo_post.js"></script>
+<!-- **** End NCI Web Analytics Page **** -->
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+	<!-- END FOOTER -->
+	
+
+
+<script type="text/javascript">
+	jQuery(".open_fancybox").click(function() {
+		jQuery.fancybox.open([
+			{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12226&fileformat=jpg', title: '<a href="details.cfm?imageid=12226">Lung Cancer, Stage IB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12227&fileformat=jpg', title: '<a href="details.cfm?imageid=12227">Lung Cancer, Stage IVA</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9029&fileformat=jpg', title: '<a href="details.cfm?imageid=9029">Lung Cancer, Stage IIA</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9030&fileformat=jpg', title: '<a href="details.cfm?imageid=9030">Lung Cancer, Stage IIIA (1)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9031&fileformat=jpg', title: '<a href="details.cfm?imageid=9031">Lung Cancer, Stage IIIB (1)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7152&fileformat=jpg', title: '<a href="details.cfm?imageid=7152">Biopsy, Fine Needle Aspiration (FNA), Lung</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12228&fileformat=jpg', title: '<a href="details.cfm?imageid=12228">Lung Cancer, Stage IIB (2)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9122&fileformat=jpg', title: '<a href="details.cfm?imageid=9122">Lung Cancer, Stage IIIA (3)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9032&fileformat=jpg', title: '<a href="details.cfm?imageid=9032">Lung Cancer, Stage IVB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7243&fileformat=jpg', title: '<a href="details.cfm?imageid=7243">Surgery - Resection, Wedge</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9120&fileformat=jpg', title: '<a href="details.cfm?imageid=9120">Lung Cancer, Stage IIB (1)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9121&fileformat=jpg', title: '<a href="details.cfm?imageid=9121">Lung Cancer, Stage IIIA (2)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9028&fileformat=jpg', title: '<a href="details.cfm?imageid=9028">Lung Cancer, Stage IA</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9123&fileformat=jpg', title: '<a href="details.cfm?imageid=9123">Lung Cancer, Stage IIIB (2)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12229&fileformat=jpg', title: '<a href="details.cfm?imageid=12229">Lung Cancer, Stage IIIC</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=2292&fileformat=jpg', title: '<a href="details.cfm?imageid=2292">Il-2 (Mouse Lungs)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7237&fileformat=jpg', title: '<a href="details.cfm?imageid=7237">Lobectomy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10578&fileformat=jpg', title: '<a href="details.cfm?imageid=10578">Lung Cancer Metastasis</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12995&fileformat=jpg', title: '<a href="details.cfm?imageid=12995">Lung Cancer and Quitting Smoking (Factoid)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9051&fileformat=jpg', title: '<a href="details.cfm?imageid=9051">Lymphoma, Hodgkin, Childhood, Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12710&fileformat=jpg', title: '<a href="details.cfm?imageid=12710">Pleuropulmonary Blastoma</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7244&fileformat=jpg', title: '<a href="details.cfm?imageid=7244">Pneumonectomy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12996&fileformat=jpg', title: '<a href="details.cfm?imageid=12996">Progress in Lung Cancer Treatment (Factoid)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13303&fileformat=jpg', title: '<a href="details.cfm?imageid=13303">Scan, Computed Tomography, Lung</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7212&fileformat=jpg', title: '<a href="details.cfm?imageid=7212">Bronchoscopy, With Cancer</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=2343&fileformat=jpg', title: '<a href="details.cfm?imageid=2343">Chest X-ray (Cancer)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12997&fileformat=jpg', title: '<a href="details.cfm?imageid=12997">Helping Lung Cancer Patients Finish Treatment (Factoid)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10549&fileformat=jpg', title: '<a href="details.cfm?imageid=10549">Kras-Driven Lung Cancer</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10545&fileformat=jpg', title: '<a href="details.cfm?imageid=10545">Lung Cancer Autophagy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10576&fileformat=jpg', title: '<a href="details.cfm?imageid=10576">Lung Cancer Desmoplasia</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12994&fileformat=jpg', title: '<a href="details.cfm?imageid=12994">Lung Cancer and KRAS G12C Mutation (Factoid)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10604&fileformat=jpg', title: '<a href="details.cfm?imageid=10604">Migrating Lung Cancer Cells</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10546&fileformat=jpg', title: '<a href="details.cfm?imageid=10546">Non-Small Lung Cancer After Cisplatin Treatment</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10542&fileformat=jpg', title: '<a href="details.cfm?imageid=10542">Non-Small Lung Cancer After Etoposide Treatment</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=2348&fileformat=jpg', title: '<a href="details.cfm?imageid=2348">Pathology of the Lung (Cancer)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7167&fileformat=jpg', title: '<a href="details.cfm?imageid=7167">Biopsia de Pulm&#xf3;n por Aspiraci&#xf3;n con Aguja Fina (Biopsy, Fine Needle Aspiration (FNA), Lung)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9034&fileformat=jpg', title: '<a href="details.cfm?imageid=9034">C&#xe1;ncer de Pulm&#xf3;n en Estadio IA (Lung Cancer, Stage IA)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12317&fileformat=jpg', title: '<a href="details.cfm?imageid=12317">C&#xe1;ncer de Pulm&#xf3;n en Estadio IB (Lung Cancer, Stage IB)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9035&fileformat=jpg', title: '<a href="details.cfm?imageid=9035">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIA (Lung Cancer, Stage IIA)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9136&fileformat=jpg', title: '<a href="details.cfm?imageid=9136">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIB (Parte 1) (Lung Cancer, Stage IIB (1))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12318&fileformat=jpg', title: '<a href="details.cfm?imageid=12318">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIB (Parte 2) (Lung Cancer, Stage IIB (2))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9036&fileformat=jpg', title: '<a href="details.cfm?imageid=9036">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIIA (Parte 1) (Lung Cancer, Stage IIIA (1))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9137&fileformat=jpg', title: '<a href="details.cfm?imageid=9137">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIIA (Parte 2) (Lung Cancer, Stage IIIA (2))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9138&fileformat=jpg', title: '<a href="details.cfm?imageid=9138">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIIA (Parte 3) (Lung Cancer, Stage IIIA (3))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9037&fileformat=jpg', title: '<a href="details.cfm?imageid=9037">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIIB (Parte 1) (Lung Cancer, Stage IIIB (1))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9139&fileformat=jpg', title: '<a href="details.cfm?imageid=9139">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIIB (Parte 2) (Lung Cancer, Stage IIIB (2))</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12319&fileformat=jpg', title: '<a href="details.cfm?imageid=12319">C&#xe1;ncer de Pulm&#xf3;n en Estadio IIIC (Lung Cancer, Stage IIIC)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12320&fileformat=jpg', title: '<a href="details.cfm?imageid=12320">C&#xe1;ncer de Pulm&#xf3;n en Estadio IVA (Lung Cancer, Stage IVA)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9038&fileformat=jpg', title: '<a href="details.cfm?imageid=9038">C&#xe1;ncer de Pulm&#xf3;n en Estadio IVB (Lung Cancer, Stage IVB)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9075&fileformat=jpg', title: '<a href="details.cfm?imageid=9075">Ovarian Cancer Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7235&fileformat=jpg', title: '<a href="details.cfm?imageid=7235">Respiratory System Anatomy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12323&fileformat=jpg', title: '<a href="details.cfm?imageid=12323">Birt-Hogg-Dube Syndrome</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=1775&fileformat=jpg', title: '<a href="details.cfm?imageid=1775">Lungs</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=8285&fileformat=jpg', title: '<a href="details.cfm?imageid=8285">Lymphoma, Adult, Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9994&fileformat=jpg', title: '<a href="details.cfm?imageid=9994">Malignant Mesothelioma</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12773&fileformat=jpg', title: '<a href="details.cfm?imageid=12773">Malignant Mesothelioma, Child</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12621&fileformat=jpg', title: '<a href="details.cfm?imageid=12621">NUT Carcinoma</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9598&fileformat=jpg', title: '<a href="details.cfm?imageid=9598">Bladder Cancer Stage IVA And IVB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7239&fileformat=jpg', title: '<a href="details.cfm?imageid=7239">Broncoscopia (Bronchoscopy, With Cancer)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9232&fileformat=jpg', title: '<a href="details.cfm?imageid=9232">Cervical Cancer Stage IVB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9153&fileformat=jpg', title: '<a href="details.cfm?imageid=9153">Colon Cancer Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12131&fileformat=jpg', title: '<a href="details.cfm?imageid=12131">Esophageal Adenocarcinoma Stage IVB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9746&fileformat=jpg', title: '<a href="details.cfm?imageid=9746">Esophageal Squamous Cell Carcinoma Stage IVB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9992&fileformat=jpg', title: '<a href="details.cfm?imageid=9992">Extracranial Germ Cell Tumor</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9993&fileformat=jpg', title: '<a href="details.cfm?imageid=9993">Extragonadal Germ Cell Tumor</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10689&fileformat=jpg', title: '<a href="details.cfm?imageid=10689">Extragonadal Germ Cell Tumor-CTHP Image</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11905&fileformat=jpg', title: '<a href="details.cfm?imageid=11905">Kidney Cancer Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7238&fileformat=jpg', title: '<a href="details.cfm?imageid=7238">Lobectom&#xed;a (Lobectomy)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9986&fileformat=jpg', title: '<a href="details.cfm?imageid=9986">Malignant Mesothelioma-CTHP Image</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7242&fileformat=jpg', title: '<a href="details.cfm?imageid=7242">Mediastinoscopy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7245&fileformat=jpg', title: '<a href="details.cfm?imageid=7245">Neumonectom&#xed;a (Pneumonectomy)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9399&fileformat=jpg', title: '<a href="details.cfm?imageid=9399">Pancreatic Cancer Stage 4</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9165&fileformat=jpg', title: '<a href="details.cfm?imageid=9165">Rectal Cancer Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7141&fileformat=jpg', title: '<a href="details.cfm?imageid=7141">Resecci&#xf3;n en Cu&#xf1;a de Pulm&#xf3;n (Surgery - Resection, Wedge)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13090&fileformat=jpg', title: '<a href="details.cfm?imageid=13090">Short Peptide Mimotopes with Enhanced Antitumor Immunogenicity</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7285&fileformat=jpg', title: '<a href="details.cfm?imageid=7285">Skin Cancer, Melanoma Stage IV</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12513&fileformat=jpg', title: '<a href="details.cfm?imageid=12513">Skin Cancer, Nonmelanoma Stage IV (3)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11967&fileformat=jpg', title: '<a href="details.cfm?imageid=11967">Thyroid Cancer, Anaplastic, Stage IVB (3)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11359&fileformat=jpg', title: '<a href="details.cfm?imageid=11359">Thyroid Cancer, Anaplastic, Stage IVC</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11364&fileformat=jpg', title: '<a href="details.cfm?imageid=11364">Thyroid Cancer, Medullary, Stage IVB</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11365&fileformat=jpg', title: '<a href="details.cfm?imageid=11365">Thyroid Cancer, Medullary, Stage IVC</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11328&fileformat=jpg', title: '<a href="details.cfm?imageid=11328">Thyroid Cancer, Papillary And Follicular, Stage II (younger Than 55 Years)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11370&fileformat=jpg', title: '<a href="details.cfm?imageid=11370">Thyroid Cancer, Papillary And Follicular, Stage IVA (55 Years And Older)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=11371&fileformat=jpg', title: '<a href="details.cfm?imageid=11371">Thyroid Cancer, Papillary And Follicular, Stage IVB (55 Years And Older)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13307&fileformat=jpg', title: '<a href="details.cfm?imageid=13307">Tomograf&#xed;a Computarizada (TC) del Pulm&#xf3;n (Scan, Computed Tomography, Lung)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12541&fileformat=jpg', title: '<a href="details.cfm?imageid=12541">Tracheobronchial Tumor</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=4356&fileformat=jpg', title: '<a href="details.cfm?imageid=4356">Air and Food Pathways</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13328&fileformat=jpg', title: '<a href="details.cfm?imageid=13328">Breast Cancer TNM Status</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9997&fileformat=jpg', title: '<a href="details.cfm?imageid=9997">Cancer Of Unknown Primary</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12705&fileformat=jpg', title: '<a href="details.cfm?imageid=12705">Cancer Of Unknown Primary, Child</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9981&fileformat=jpg', title: '<a href="details.cfm?imageid=9981">Cancer Of Unknown Primary-CTHP Image</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9851&fileformat=jpg', title: '<a href="details.cfm?imageid=9851">Dividing Cells Showing Chromosomes and Cell Skeleton</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12933&fileformat=jpg', title: '<a href="details.cfm?imageid=12933">Drugging the Undruggable</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12130&fileformat=jpg', title: '<a href="details.cfm?imageid=12130">Esophageal Adenocarcinoma Stage IIIB (2)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9957&fileformat=jpg', title: '<a href="details.cfm?imageid=9957">Esophageal Adenocarcinoma Stage IVA (1)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12241&fileformat=jpg', title: '<a href="details.cfm?imageid=12241">Esophageal Squamous Cell Carcinoma Stage IIIB (2)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12242&fileformat=jpg', title: '<a href="details.cfm?imageid=12242">Esophageal Squamous Cell Carcinoma Stage IVA (1)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9983&fileformat=jpg', title: '<a href="details.cfm?imageid=9983">Extracranial Germ Cell Tumor-CTHP Image</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9849&fileformat=jpg', title: '<a href="details.cfm?imageid=9849">HIV, the AIDS virus (yellow), infecting a human cell</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=12873&fileformat=jpg', title: '<a href="details.cfm?imageid=12873">How Common is Colorectal Cancer? (Factoid)</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13079&fileformat=jpg', title: '<a href="details.cfm?imageid=13079">Kellie’s Story—NCORP Clinical Trial Participant</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=8277&fileformat=jpg', title: '<a href="details.cfm?imageid=8277">Lymphoma, Adult, Stage IIE</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9053&fileformat=jpg', title: '<a href="details.cfm?imageid=9053">Lymphoma, Hodgkin, Childhood, Stage IIE</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13040&fileformat=jpg', title: '<a href="details.cfm?imageid=13040">Lymphoma, Hodgkin, Childhood, Stage III</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=8273&fileformat=jpg', title: '<a href="details.cfm?imageid=8273">Lymphoma, Non-Hodgkin, Childhood,  Stage I</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9803&fileformat=jpg', title: '<a href="details.cfm?imageid=9803">Metastasis</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13301&fileformat=jpg', title: '<a href="details.cfm?imageid=13301">Metastatic Breast Cancer</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10499&fileformat=jpg', title: '<a href="details.cfm?imageid=10499">Ras-Driven Cancer</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10501&fileformat=jpg', title: '<a href="details.cfm?imageid=10501">Ras-Driven Cancer</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=10500&fileformat=jpg', title: '<a href="details.cfm?imageid=10500">Ras-Driven Cancer</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=2129&fileformat=jpg', title: '<a href="details.cfm?imageid=2129">Scanning Electron Microscope Image of Blood Cells</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13109&fileformat=jpg', title: '<a href="details.cfm?imageid=13109">Self-Driven Probiotic-CRISPR/Cas9 Nanosystem for Sono-Immunometabolic Cancer Therapy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=8304&fileformat=jpg', title: '<a href="details.cfm?imageid=8304">Shimkin, Michael</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13110&fileformat=jpg', title: '<a href="details.cfm?imageid=13110">Targeting Multivalent Nanosensors to Invasive Colorectal Cancer CRC through Tumor Acidosis</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=13052&fileformat=jpg', title: '<a href="details.cfm?imageid=13052">Throat Anatomy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9266&fileformat=jpg', title: '<a href="details.cfm?imageid=9266">Thymus Gland, Adult, Anatomy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=9267&fileformat=jpg', title: '<a href="details.cfm?imageid=9267">Thymus Gland, Child, Anatomy</a>', type: 'image' },
+{ href: 'https://visualsonline.cancer.gov/preview.cfm?imageid=7140&fileformat=jpg', title: '<a href="details.cfm?imageid=7140">Ultrasound, Endoscopic (EUS), With Biopsy</a>', type: 'image' } 
+		], {
+			padding : 15,
+			autoPlay : true,
+			playSpeed : 4000,
+			openEffect : 'elastic',
+			closeEffect : 'elastic',
+			nextEffect : 'fade',
+			prevEffect : 'fade',
+			openSpeed : 500,
+			closeSpeed : 500,
+			nextSpeed : 750,
+			prevSpeed : 750,
+			helpers : {
+      			title: { type: 'inside' },
+				buttons : {
+					tpl : '<div id="fancybox-buttons"><ul style="width:132px;"><li><a class="btnPrev" title="Previous" href="javascript:;"></a></li><li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li><li><a class="btnNext" title="Next" href="javascript:;"></a></li><li><a class="btnClose" title="Close" href="javascript:;"></a></li></ul></div>'
+				},
+				overlay : {
+					css : {
+						'display' : 'inline',
+						'background' : 'rgba(40, 40, 40, 0.985)'
+					}
+				} 
+			}
+		});
+		
+		return false;
+		
+	});
+</script>
+
+
+
+
+
+
+<script>_satellite["_runScript1"](function(event, target, Promise) {
+var s=document.createElement("script");s.type="text/javascript",s.id="_fed_an_ua_tag",s.src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=HHS&subagency=NCI",document.head.appendChild(s);
+});</script></body></html>
