@@ -1,3 +1,19 @@
+# Python / VSCode ignores
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# Data & generated files
+data/nih_images/
+data/nih_images_full/
+data/nih_results.csv
+data/query_text.txt
+nih_debug.html
+
 # Angular specific
 /dist/
 /out-tsc/
@@ -26,3 +42,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
