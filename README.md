@@ -20,7 +20,7 @@ This project builds a modular system that:
 ---
 
 ## Project Structure  
-
+```bash
 src/
 ├── data_preprocessing.py # Prepares dataset from raw chapter files
 ├── query_builder.py # Builds search query text from a selected chapter
@@ -34,6 +34,7 @@ data/
 ├── query_text.txt # Query text for image search
 ├── nih_results.csv # Search results from NIH
 └── nih_images/ # Downloaded images + manifest
+```
 
 
 ---
