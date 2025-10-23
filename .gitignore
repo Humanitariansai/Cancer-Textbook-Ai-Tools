@@ -28,3 +28,46 @@ cache/
 
 # Hugging Face / Transformers cache
 ~/.cache/huggingface/
+
+# ----------------------------------------------------------------
+# Project-specific ignores
+# ----------------------------------------------------------------
+
+# Data folders (large generated outputs)
+data/
+images/
+filters/
+
+# NIH scraping artifacts
+*.csv
+*.tsv
+*.json
+*.zip
+*.html
+
+# Temporary notebooks or checkpoints
+notebooks/.ipynb_checkpoints/
+notebooks/*.ipynb
+
+# Test outputs
+tests/__pycache__/
+tests/*.tmp
+tests/output/
+ython cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# VS Code
+.vs
