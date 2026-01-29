@@ -231,7 +231,7 @@ def main():
     )
     parser.add_argument(
         '--embeddings-file',
-        default='data/nih_image_embeddings.pkl',
+        default='data/nih_comprehensive_embeddings.pkl',
         help='Where to save/load embeddings'
     )
     parser.add_argument(

@@ -85,12 +85,16 @@ def process_chapter(chapter_id, min_score=0.5, topk=10, keep_duplicates=True):
             topk
         )
         
-        if len(matches_df) == 0:
+        # Check if we got results
+        if matches_df is None or len(matches_df) == 0:
             print(f"⚠️ No semantic matches found for Chapter {chapter_id}")
             print("Try lowering --min-score (e.g., 0.45)")
             return None
         
         print(f"✅ Found {len(matches_df)} matches\n")
+        
+        # Use the saved CSV file for next steps
+        semantic_map_to_use = semantic_map
         
         # STEP 3: Scrape metadata
         print("🔍 STEP 3/5: Scraping metadata from NIH...")
